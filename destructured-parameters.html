@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function breakfast(dessert,drink,{location,restaurant}={}) {
+        console.log(dessert,drink,location,restaurant);
+    }
+    breakfast("dim sum","tea",{location:"广州",restaurant:'广州酒家'});
+    breakfast("dim sum","tea",{restaurant:'广州酒家'});   //location undefined
+
+
+</script>
+</body>
+</html>

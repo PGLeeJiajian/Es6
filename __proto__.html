@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let breakfast ={
+        getDrink (){
+            return 'tea';
+        }
+    };
+    let dinner ={
+        getDrink () {
+             return "beer";
+        }
+    };
+//    let sunday = {
+//        __proto__:breakfast
+//    };
+////    console.log(sunday.getDrink());
+//    console.log(Object.getPrototypeOf(sunday)===breakfast);
+//
+//    sunday.__proto__ = dinner;
+//    console.log(sunday.getDrink());
+//    console.log(Object.getPrototypeOf(sunday)===dinner);
+    let sunday = {
+        __proto__:breakfast,
+        getDrink(){
+            return super.getDrink() +" hhh" //调用原型__proto__的这个方法，super指__proto__：breakfast
+        }
+    };
+    console.log(sunday.getDrink());
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function breakfast(dessert = "dessert",drink ="drink") {   //设置breakfast的默认参数
+        return `${dessert} + ${drink}`
+    }
+    console.log(breakfast());  //不加参数就调用默认传的给的参数
+    console.log(breakfast("dim sum","tea")); //加参数就直接用这个参数
+</script>
+</body>
+</html>
