@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    function breakfast() {
+//        return ["hh","hehe","biubiu"];
+//    }
+//    let [a1,a2,a3] = breakfast();
+function breakfast() {
+    return {a1:"hh",a2:"hehe",a3:"biubiu"};
+}
+    let{a1:a1,a2:a2,a3:a3}  = breakfast();
+
+    console.log(a1,a2,a3); //let 下的一个对象里的属性名称，并非属性值；属性值是breakfast对象的属性名称
+</script>
+</body>
+</html>
