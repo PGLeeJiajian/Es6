@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //    var arr = [1,2,[3,888]];
+    ////    var a = arr[0],b = arr[1], c = arr[2];
+    //
+    //    var [a,b=666,[c,d]] = arr;
+    //
+    //    console.log(a,b,c);
+//    var a = 1,b = 3;
+//    a = [b,b=a][0];                 //用解构的方式把a和b的值互换
+//    console.log(a,b);
+     var obj = {                        //解构对象与以上的解析数组不同
+         a:1
+     };
+//     var {b,a} =obj;                      //解析对象的键名必须与之匹配
+    var {b:b=2,a:c=333} =obj;
+
+    console.log(c,b);                          //在obj有赋值的时候c是a的值，b是默认的值
+</script>
+</body>
+</html>
